@@ -114,22 +114,22 @@
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
 
 <script type="text/javascript">
-	$(document).ready(function(){
-	  
-		$(window).scroll(function(){
-			if ($(this).scrollTop() > 300) {
-				$('.scrollup').fadeIn();
-			} else {
-				$('.scrollup').fadeOut();
-			}
-			});
-			  
-			$('.scrollup').click(function(){
-			$("html, body").animate({ scrollTop: 0 }, 600);
-			return false;
-		});
-	  
-	});
+  $(document).ready(function(){
+    
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 300) {
+        $('.scrollup').fadeIn();
+      } else {
+        $('.scrollup').fadeOut();
+      }
+      });
+        
+      $('.scrollup').click(function(){
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+    });
+    
+  });
 </script>
 
 <script src="https://switch.customfw.xyz/assets/js/main.min.js"></script>
@@ -232,7 +232,7 @@
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
-	<hr class="style-two">
+  <hr class="style-two">
 
       <li><a href="https://vk.com/" itemprop="sameAs">
   <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Вконтакте
@@ -240,7 +240,7 @@
 <li><a href="https://vk.com/nincfw" itemprop="sameAs">
   <i class="fa fa-fw fa-vk" aria-hidden="true"></i> Группа вконтакте
 </a></li>
-	
+  
       
 
       
@@ -328,8 +328,8 @@
           
         </header>
       
-	  
-	  	
+    
+      
         
 <aside class="sidebar__right">
 <nav class="toc">
@@ -395,9 +395,9 @@
 
 <details class="spoiler"><summary class="spoiler-title">Можно ли работать без EmuNAND</summary><div class="spoiler-body">
 <p>Да, вполне. Если вам не нужен онлайн и вы не используете <span class="tooltip">Caffeine
-	<span class="bottom">
-		 <a href="exploits" target="blank_">Это эксплойт</a>, позволяющая запустить hekate из браузера на приставке с прошивкой 4.1.0. В данный момент это единственный способ запустить прошивку на патченных юнитах. Работает ТОЛЬКО при запуске из официальной прошивки, поэтому сильно важно, чтобы официальная прошивка всегда оставалась с версией системного ПО 4.1.0
-	</span>
+  <span class="bottom">
+     <a href="exploits" target="blank_">Это эксплойт</a>, позволяющая запустить hekate из браузера на приставке с прошивкой 4.1.0. В данный момент это единственный способ запустить прошивку на патченных юнитах. Работает ТОЛЬКО при запуске из официальной прошивки, поэтому сильно важно, чтобы официальная прошивка всегда оставалась с версией системного ПО 4.1.0
+  </span>
 </span>, EmuNAND вам тоже не понадобится.</p>
 </div></details>
 
@@ -457,7 +457,7 @@
 
 <p class="notice--warning">Должно быть не менее 7 Гб свободного места во внутренней памяти приставки!</p>
 
-<p>План действия простой - создаём в через SXOS о внутренней памяти EmuNAND размером в 5ГБ и переносим его на карту памятиЮ после чего подключаем к Atmosphere. Таким образом размер EmuNAND у нас будет минимальный - 5Гб.</p>
+<p>План действия простой - создаём EmuNAND размером в 5ГБ внутренней памяти и переносим его на карту памяти. После чего подключаем к Atmosphere. Таким образом размер EmuNAND у нас будет минимальный - 5Гб.</p>
 
 <ol>
   <li>Установите SXOS с помощью <span class="tooltip"><a href="https://github.com/rashevskyv/switch/releases/latest" target="_blank">kefir</a>
@@ -573,13 +573,13 @@
 <h4 id="запуск-и-настройка-emummc">Запуск и настройка emuMMC</h4>
 
 <p>Прошивка настроена таким образом, что будет запускаться автоматически каждый раз при пробросе <code class="highlighter-rouge">payload.bin</code> из состава <span class="tooltip"><a href="https://github.com/rashevskyv/switch/releases/latest" target="_blank">kefir</a>
-	<span class="bottom">
-		Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-	</span>
+  <span class="bottom">
+    Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+  </span>
 </span>. Если же вы находитесь в <span class="tooltip">hekate
-	<span class="bottom">
-		Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
-	</span>
+  <span class="bottom">
+    Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
+  </span>
 </span>, то просто перейдите в “<strong>Launch</strong>” и запустите “<strong>Atmosphere</strong>”</p>
 
 <p>Попав в EmuNAND проделайте следующие действия:</p>
@@ -591,13 +591,13 @@
 
 <details class="spoiler"><summary class="spoiler-title">Запуск EmuNAND на Atmosphere</summary><div class="spoiler-body">
 <p>Прошивка настроена таким образом, что будет запускаться автоматически каждый раз при пробросе <code class="highlighter-rouge">payload.bin</code> из состава <span class="tooltip"><a href="https://github.com/rashevskyv/switch/releases/latest" target="_blank">kefir</a>
-	<span class="bottom">
-		Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-	</span>
+  <span class="bottom">
+    Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+  </span>
 </span>. Если же вы находитесь в <span class="tooltip">hekate
-	<span class="bottom">
-		Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
-	</span>
+  <span class="bottom">
+    Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
+  </span>
 </span>, то просто перейдите в “<strong>Launch</strong>” и запустите “<strong>Atmosphere</strong>”</p>
 
 <h4 id="для-переключения-между-несколькими-emunand">Для переключения между несколькими EmuNAND</h4>
@@ -643,9 +643,9 @@
 
 <details class="spoiler"><summary class="spoiler-title">Запуск SysNAND на Atmosphere</summary><div class="spoiler-body">
 <p class="notice--warning">Если вы используете <span class="tooltip">Caffeine
-	<span class="bottom">
-		 <a href="exploits" target="blank_">Это эксплойт</a>, позволяющая запустить hekate из браузера на приставке с прошивкой 4.1.0. В данный момент это единственный способ запустить прошивку на патченных юнитах. Работает ТОЛЬКО при запуске из официальной прошивки, поэтому сильно важно, чтобы официальная прошивка всегда оставалась с версией системного ПО 4.1.0
-	</span>
+  <span class="bottom">
+     <a href="exploits" target="blank_">Это эксплойт</a>, позволяющая запустить hekate из браузера на приставке с прошивкой 4.1.0. В данный момент это единственный способ запустить прошивку на патченных юнитах. Работает ТОЛЬКО при запуске из официальной прошивки, поэтому сильно важно, чтобы официальная прошивка всегда оставалась с версией системного ПО 4.1.0
+  </span>
 </span>, то для игры в лицензию вы запускаете не SysNAND, а EmuNAND, который специально для этого подготовили!</p>
 
 <ol>
@@ -690,13 +690,13 @@
 <h4 id="запуск-и-настройка-emunand">Запуск и настройка EmuNAND</h4>
 
 <p>Прошивка настроена таким образом, что будет запускаться автоматически каждый раз при пробросе <code class="highlighter-rouge">payload.bin</code> из состава <span class="tooltip"><a href="https://github.com/rashevskyv/switch/releases/latest" target="_blank">kefir</a>
-	<span class="bottom">
-		Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-	</span>
+  <span class="bottom">
+    Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+  </span>
 </span>. Если же вы находитесь в <span class="tooltip">hekate
-	<span class="bottom">
-		Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
-	</span>
+  <span class="bottom">
+    Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
+  </span>
 </span>, то просто перейдите в “<strong>Launch</strong>” и запустите “<strong>SXOS</strong>”</p>
 
 <p>Попав в EmuNAND впервые, проделайте следующие действия:</p>
@@ -710,21 +710,21 @@
 
 <details class="spoiler"><summary class="spoiler-title">Запуск EmuNAND на SXOS</summary><div class="spoiler-body">
 <p>Прошивка настроена таким образом, что будет запускаться автоматически каждый раз при пробросе <code class="highlighter-rouge">payload.bin</code> из состава <span class="tooltip"><a href="https://github.com/rashevskyv/switch/releases/latest" target="_blank">kefir</a>
-	<span class="bottom">
-		Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
-	</span>
+  <span class="bottom">
+    Сборник, состоящий из выбранного кастома, необходимых программ и скриптов, которые все это установят правильным образом. Состав кефира и инструкцию по установке можно посмотреть в его репозитории
+  </span>
 </span>. Если же вы находитесь в <span class="tooltip">hekate
-	<span class="bottom">
-		Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
-	</span>
+  <span class="bottom">
+    Кастомный бутлоадер для Nintendo Switch. С его помощью мы делаем резервное копирование, запускаем кастом, а так же предотвращаем сгорание предохранителей. Один из самых важных инструментов из тех, что мы будем использовать.
+  </span>
 </span>, то просто перейдите в “<strong>Launch</strong>” и запустите “<strong>SXOS</strong>”</p>
 </div></details>
 
 <details class="spoiler"><summary class="spoiler-title">Запуск SysNAND на SXOS</summary><div class="spoiler-body">
 <p class="notice--warning">Если вы используете <span class="tooltip">Caffeine
-	<span class="bottom">
-		 <a href="exploits" target="blank_">Это эксплойт</a>, позволяющая запустить hekate из браузера на приставке с прошивкой 4.1.0. В данный момент это единственный способ запустить прошивку на патченных юнитах. Работает ТОЛЬКО при запуске из официальной прошивки, поэтому сильно важно, чтобы официальная прошивка всегда оставалась с версией системного ПО 4.1.0
-	</span>
+  <span class="bottom">
+     <a href="exploits" target="blank_">Это эксплойт</a>, позволяющая запустить hekate из браузера на приставке с прошивкой 4.1.0. В данный момент это единственный способ запустить прошивку на патченных юнитах. Работает ТОЛЬКО при запуске из официальной прошивки, поэтому сильно важно, чтобы официальная прошивка всегда оставалась с версией системного ПО 4.1.0
+  </span>
 </span>, то для игры в лицензию вы запускаете не SysNAND, а EmuNAND, который специально для этого подготовили!</p>
 
 <ol>
@@ -773,7 +773,7 @@
 
 <p class="notice--success"><a href="javascript:window.close();">Закрыть страницу</a></p>
 
-				
+        
         
       </section>
       <footer class="page__meta">
@@ -788,7 +788,7 @@
 
       
     </div>
-		
+    
     
   </article>
 
@@ -812,8 +812,8 @@
     
     
     
-	  <li><a href="https://vk.com/nincfw" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Custom Nintendo
-	  </a></li>	
+    <li><a href="https://vk.com/nincfw" itemprop="sameAs"><i class="fa fa-fw fa-vk" aria-hidden="true"></i> Custom Nintendo
+    </a></li> 
     
     <li><a href="https://switch.customfw.xyz/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
